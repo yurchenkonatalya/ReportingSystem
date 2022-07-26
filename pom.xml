@@ -15,6 +15,7 @@
     <description>ReportingSystem</description>
     <properties>
         <java.version>11</java.version>
+        <liquibase-plagin.version>1.9.5.0</liquibase-plagin.version>
     </properties>
     <dependencies>
         <dependency>
@@ -28,6 +29,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>6.19.1</version>
         </dependency>
 
         <dependency>
@@ -61,6 +68,12 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.28</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-plugin</artifactId>
+            <version>${liquibase-plagin.version}</version>
         </dependency>
 
     </dependencies>
